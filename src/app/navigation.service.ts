@@ -13,7 +13,7 @@ export interface NavItem {
   providedIn: 'root',
 })
 export class NavigationService {
-  private navItems: NavItem[] = [
+  navItems: NavItem[] = [
     {
       displayName: 'Dashboard',
       iconName: 'dashboard',
@@ -33,6 +33,7 @@ export class NavigationService {
   constructor() {}
 
   getNavItems(userType: string): NavItem[] {
-    return this.navItems.filter(item => item.userTypes.includes(userType));
+    var results = this.navItems.filter(item => item.userTypes.includes(userType));
+    return results;
   }
 }

@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class UserTypeService {
-  private currentUserType: string = 'Administration'; 
+  private currentUserType: string = 'Administrator'; 
 
   constructor() {}
 

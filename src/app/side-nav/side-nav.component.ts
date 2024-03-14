@@ -14,6 +14,5 @@ export class SideNavComponent implements OnInit {
   ngOnInit() {
     const userType = this.userTypeService.getUserType();
     this.navItems = this.navigationService.getNavItems(userType);
-    console.log('Hit');
   }
 } 
