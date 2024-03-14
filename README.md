@@ -3,6 +3,7 @@ This project is to demonstrate my knowladge in Angular and general programming p
 
 Thanks so much for your consideration! 
 ## Logic behind the access controls:
+User types: `['Help Desk', 'Administrator', 'Full Control', 'Download', 'Read']`
 - Dashboard: Accessible by almost everyone, as it provides a general overview suitable for various roles.
 - Administration: Restricted to Administrator and Full Control, given its sensitive nature of user and system settings management.
 - Reports: Help Desk can view them for support purposes, while Administrator and Full Control have full access. The Download role implies the ability to download reports, a common need for analysis outside the system.
