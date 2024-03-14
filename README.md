@@ -1,4 +1,4 @@
-# DynamicNavApp
+# Dynamic-Nav-App
 This project is to demonstrate my knowladge in Angular and general programming practices for Deloitte. This project was created on 3/13/2024 and currently only has about 5 hours of development time put into it.
 
 Thanks so much for your consideration! 
@@ -11,6 +11,8 @@ Thanks so much for your consideration!
 - Tools: Specialized functionalities like import/export are reserved for Administrator and Full Control roles, reflecting their potential impact on the system's data integrity.
 - Database: Reserved 'back-end' functionality for Full Access account type. 
 
+# First Time Setup
+Make sure you have ther correct Angular & Node versions installed, then cd into the /dynamic-nav-app folder and run `npm install`. The dependencies should all be installed automatically. 
 # Angular Generated Docs: 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
@@ -26,15 +28,3 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
