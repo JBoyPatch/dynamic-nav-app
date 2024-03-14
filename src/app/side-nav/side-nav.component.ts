@@ -5,7 +5,6 @@ import { UserTypeService } from '../user-type.service';
 @Component({
   selector: 'app-side-nav',
   templateUrl: './side-nav.component.html',
-  styleUrl: './side-nav.component.css'
 })
 export class SideNavComponent implements OnInit {
   navItems: NavItem[] = [];
