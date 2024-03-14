@@ -4,7 +4,7 @@
       <ng-container *ngFor="let navItem of navItems">
         <mat-list-item *ngIf="!navItem.children">
           <mat-icon matListIcon style="color: #007bff;">{{ navItem.iconName }}</mat-icon>
-          <a matLine style="color: #007bff;">{{ navItem.displayName }}</a>
+          <a matLine style="color: #007bff;"> {{ navItem.displayName }}</a>
         </mat-list-item>
         <mat-expansion-panel *ngIf="navItem.children">
           <mat-expansion-panel-header>

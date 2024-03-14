@@ -64,6 +64,17 @@ export class NavigationService {
         { displayName: 'Export', iconName: 'get_app', route: 'tools/export', userTypes: ['Administrator', 'Full Control'] },
       ],
     },
+    {
+      displayName: 'Database Settings',
+      iconName: 'storage',
+      userTypes: ['Full Control'],
+      children: [
+        { displayName: 'Backup & Restore', iconName: 'backup', route: '/database-settings/backup', userTypes: ['Full Control'] },
+        { displayName: 'User Permissions', iconName: 'security', route: '/database-settings/permissions', userTypes: ['Full Control'] },
+        { displayName: 'Performance Tuning', iconName: 'speed', route: '/database-settings/performance', userTypes: ['Full Control'] },
+        { displayName: 'Schema Management', iconName: 'view_quilt', route: '/database-settings/schema', userTypes: ['Full Control'] },
+      ],
+    }
   ];
 
   constructor() {}
