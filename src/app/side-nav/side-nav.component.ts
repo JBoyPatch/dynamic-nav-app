@@ -8,10 +8,15 @@ import { UserTypeService } from '../user-type.service';
 })
 export class SideNavComponent implements OnInit {
   navItems: NavItem[] = [];
-  constructor(private navigationService: NavigationService, private userTypeService: UserTypeService) {}
+
+  constructor(
+    private navigationService: NavigationService,
+    private userTypeService: UserTypeService
+  ) {}
 
   ngOnInit() {
-    const userType = this.userTypeService.getUserType();
-    this.navItems = this.navigationService.getNavItems(userType);
+    this.userTypeService.currentUserType$.subscribe((userType) => {
+      this.navItems = this.navigationService.getNavItems(userType);
+    });
   }
 } 

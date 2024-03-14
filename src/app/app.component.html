@@ -8,11 +8,10 @@
         <mat-icon>arrow_drop_down</mat-icon>
     </button>
     <mat-menu #accountMenu="matMenu">
-        <button mat-menu-item 
-            *ngFor="let accountType of ['Help Desk', 'Administrator', 'Full Control', 'Download', 'Read']">
-        {{ accountType }}
+        <button mat-menu-item *ngFor="let userType of ['Help Desk', 'Administrator', 'Full Control', 'Download', 'Read']" (click)="switchUserType(userType)">
+          {{ userType }}
         </button>
-    </mat-menu>
+      </mat-menu>
 </mat-toolbar>
 
 <div style="margin-top: 64px;">
