@@ -28,6 +28,42 @@ export class NavigationService {
         { displayName: 'Settings', iconName: 'settings', route: 'admin/settings', userTypes: ['Administrator', 'Full Control'] },
       ],
     },
+    {
+      displayName: 'Reports',
+      iconName: 'assessment',
+      userTypes: ['Help Desk', 'Administrator', 'Full Control', 'Download'],
+      children: [
+        { displayName: 'Usage Reports', iconName: 'bar_chart', route: 'reports/usage', userTypes: ['Administrator', 'Full Control', 'Download'] },
+        { displayName: 'Performance Reports', iconName: 'show_chart', route: 'reports/performance', userTypes: ['Administrator', 'Full Control', 'Download'] },
+      ],
+    },
+    {
+      displayName: 'Support',
+      iconName: 'support',
+      userTypes: ['Help Desk', 'Administrator', 'Full Control'],
+      children: [
+        { displayName: 'Tickets', iconName: 'receipt_long', route: 'support/tickets', userTypes: ['Help Desk', 'Administrator', 'Full Control'] },
+        { displayName: 'FAQ', iconName: 'help_outline', route: 'support/faq', userTypes: ['Help Desk', 'Administrator', 'Full Control', 'Read'] },
+      ],
+    },
+    {
+      displayName: 'Content Management',
+      iconName: 'content_copy',
+      userTypes: ['Administrator', 'Full Control'],
+      children: [
+        { displayName: 'Articles', iconName: 'article', route: 'content/articles', userTypes: ['Administrator', 'Full Control'] },
+        { displayName: 'Media Library', iconName: 'perm_media', route: 'content/media', userTypes: ['Administrator', 'Full Control'] },
+      ],
+    },
+    {
+      displayName: 'Tools',
+      iconName: 'build',
+      userTypes: ['Administrator', 'Full Control'],
+      children: [
+        { displayName: 'Import', iconName: 'publish', route: 'tools/import', userTypes: ['Administrator', 'Full Control'] },
+        { displayName: 'Export', iconName: 'get_app', route: 'tools/export', userTypes: ['Administrator', 'Full Control'] },
+      ],
+    },
   ];
 
   constructor() {}

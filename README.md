@@ -1,5 +1,15 @@
 # DynamicNavApp
 
+## Logic behind the access controls:
+Dashboard: Accessible by almost everyone, as it provides a general overview suitable for various roles.
+Administration: Restricted to Administrator and Full Control, given its sensitive nature of user and system settings management.
+Reports: Help Desk can view them for support purposes, while Administrator and Full Control have full access. The Download role implies the ability to download reports, a common need for analysis outside the system.
+Support: Aimed at roles involved in user support and problem resolution, with Read access to FAQs for informational purposes extending to more roles.
+Content Management: Limited to roles responsible for managing the system's content, ensuring only authorized changes are made.
+Tools: Specialized functionalities like import/export are reserved for Administrator and Full Control roles, reflecting their potential impact on the system's data integrity.
+
+# Angular Generated Docs: 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.3.
 
 ## Development server
