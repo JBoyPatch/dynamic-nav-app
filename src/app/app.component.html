@@ -1,3 +1,21 @@
-<!-- Default to RouterOutlet -->
-<app-side-nav></app-side-nav>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1000;">
+    <img src="./assets/Logo.png" alt="Logo" style="height: 50px;"> 
+
+    <span style="flex: 1 1 auto;"></span> 
+
+    <button mat-button [matMenuTriggerFor]="accountMenu">
+        Switch Account
+        <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+    <mat-menu #accountMenu="matMenu">
+        <button mat-menu-item 
+            *ngFor="let accountType of ['Help Desk', 'Administrator', 'Full Control', 'Download', 'Read']">
+        {{ accountType }}
+        </button>
+    </mat-menu>
+</mat-toolbar>
+
+<div style="margin-top: 64px;">
+    <app-side-nav></app-side-nav>
+    <router-outlet></router-outlet>
+</div>

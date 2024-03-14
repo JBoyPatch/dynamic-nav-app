@@ -10,6 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 
@@ -27,6 +29,8 @@ import { routes } from './app.routes';
     MatIconModule,
     MatButtonModule,
     MatExpansionModule,
+    MatToolbarModule,
+    MatMenuModule,
     RouterModule.forRoot(routes),
   ],
   providers: [NavigationService, UserTypeService],
